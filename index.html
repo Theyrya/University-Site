@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Education Centre</title>
+    <link rel="stylesheet" href="style/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <link rel="stylesheet" href=link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <section class="header">
+        <nav>
+            <a href="index.html"><img src="img/logo.png" alt="logo"></a>
+            <div class="nav-links" id="navLinks">
+                <i class="fa fa-times" onclick="hideMenu()"></i>
+                <ul>
+                    
+                    <li><a href="about.html">ABOUT</a></li>
+                    <li><a href="course.html">COURSE</a></li>
+                    <li><a href="todo.html">CALENDAR</a></li>
+                    <li><a href="contact.html">CONTACT</a></li>
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+        </nav>
+        <div class="text-box">
+            <h1>World's Biggest Education Centre</h1>
+            <p>Come Join us Today only and build a great future with US.</p>
+            <a href="" class="hero-btn">Visit us to know more</a>
+        </div>
+
+    </section>
+<section class="course">
+    <h1>Courses we offer</h1>
+    <p>We offer a vast variety of courses in Engineering, Biology, Commerce and Software Professions.</p>
+    <div class="row">
+        <div class="course-col">
+            <h3>Intermediate</h3>
+            <p>Intermediate education (Grades 11-12) acts as a stepping stone between school and higher education. It helps students build a strong foundation for their academic and career goals. Choose from Science, Commerce, or Arts, depending on your interests and aspirations.</p>
+
+        </div>
+        <div class="course-col">
+            <h3>Degree</h3>
+            <p>Undergraduate degrees are your first step into specialized higher education after completing Intermediate. Explore courses like B.A., B.Sc., B.Com., B.Tech., and more, tailored to your interests and career plans.</p>
+
+        </div>
+        <div class="course-col">
+            <h3>Post Graduation</h3>
+            <p>These programs prepare students for advanced careers, research opportunities, or further studies like a Ph.D. Explore options such as Master's degrees (M.A., M.Sc., MBA, etc.), postgraduate diplomas, and professional certifications.</p>
+
+        </div>
+        
+
+    </div>
+    
+</section>
+
+ <section class="facilities">
+    <h1>Our facilities</h1>
+    <p>here, we provide some of the best facilities of the world</p>
+    <div class="row">
+        <div class="facilities-col">
+            <img src="img/library.png" alt="w">
+            <h3>World class library</h3>
+            <p>A library is more than a collection of books; it is a sanctuary for learning, discovery, and personal growth. This libraries offers Comprehensive Collections, Modern Facilities, Welcoming Atmosphere, Expert Assistance, Accessibility.</p>
+            
+        </div>
+        <div class="facilities-col">
+            <img src="img/basketball.png" alt="w">
+            <h3>Basketball ground</h3>
+            <p>We have the best Basketball grounds along with many good teams to compete with. If you are looking for sports we provide the best coaching along with the studies. We had contributed more than ten players to NBA till now.</p>
+
+        </div>
+        <div class="facilities-col">
+            <img src="img/cafeteria.png" alt="w">
+            <h3>Tasty and healthy food</h3>
+            <p>Peacefull cafeteria along with the healthy food is our pride. The best food you can find with the best quality of your money. Experienced chefs with many great dishes of different countries are available here.</p>
+
+        </div>
+    </div>
+
+ </section>
+  <section class="testimonials">
+    <h1>What Our Students Says</h1>
+    <p>We always focus on our students reviews and their suggestions.</p>
+    <div class="row">
+        <div class="tectimonial-col">
+            <img src="img/user1.jpg" alt="user">
+            <div>
+                <p>I completed my bacheolors here and it was the one of the best experience in life. I like the idea of bringing the spirituality in the University</p>
+                <h3>Stevi light</h3>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+            </div>
+        </div>
+        <div class="tectimonial-col">
+            <img src="img/user2.jpg" alt="user">
+            <div>
+                <p>The professors are always helpful even in the personal matters, motivating me in every aspects of my life. Thankyou team.</p>
+                <h3>Joshoa Clit</h3>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star-half-stroke"></i>
+
+            </div>
+        </div>
+    </div>
+  </section>
+
+   <section class="CTA">
+    <h1>Enroll for our various online courses anywhere from the world</h1>
+    <a href="contact.html" class="hero-btn">CONTACT US</a>
+   </section>
+ <section class="footer">
+    <h4>About Us</h4>
+    <p>Till now we have thousands of scholars passed from our institutes living their life happily and peacefully.</p>
+    
+ </section>
+
+
+        <script>
+        var navLinks = document.getElementById("navLinks");
+        function showMenu(){
+            navLinks.style.right = "0";
+        }
+        function hideMenu(){
+            navLinks.style.right = "-200px";
+        }
+        
+    </script>
+</body>
+</html>

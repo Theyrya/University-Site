@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About</title>
+    
+    <link rel="stylesheet" href="style/about.css">
+</head>
+<style>
+    
+
+</style>
+<body>
+    <section class="header">
+        <nav>
+            <a href="index.html"><img src="img/logo.png" alt="logo"></a>
+            <div class="nav-links" id="navLinks">
+                <i class="fa fa-times" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="course.html">COURSE</a></li>
+                    <li><a href="todo.html">CALENDAR</a></li>
+                    <li><a href="contact.html">CONTACT</a></li>
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+        </nav>
+        <div class="text-box">
+            <h1>Welcome to the About page</h1>
+            <p>Explore more information downside</p>
+            
+        </div>
+
+    </section>
+    <section class="course">
+        <h1>List of all the awards we won till now</h1>
+        <p>Double click below to see more</p>
+        <div class="row">
+            <div class="award" onclick="toosee(this)">
+                <span>
+                    <h3>NQ Winner</h3>
+            <p>National quiz winner 2023- Our college won the ths biggest quiz competition of the country competing with hundreds of other colleges.</p>
+                </span>
+            </div>
+            
+            <div class="award" onclick="toosee(this)">
+                <span>
+                    <h3>Best Basketball team</h3>
+            <p>We are having one of the best basketball team in th country with strong and aspiring players who are dedicated to playing and building a better</p>
+                </span>
+    
+            </div>
+            <div class="award" onclick="toosee(this)">
+                <span>
+                    <h3>Best acting school</h3>
+            <p>Having a acting school is one of the most successfull things we started in recent years with a number of students directly getting roles in many television shows and movies.</p>
+                </span>
+    
+            </div>
+            <div class="award" onclick="toosee(this)">
+                <span>
+                    <h3>Wellness award</h3>
+            <p> In 2022, 810 students completed their Engineering course from our institutes, breaking the record of 789 of 2020 of our own institue in the whole country.</p>
+                </span>
+    
+            </div>
+            
+    
+        </div>
+        
+    </section>
+    <script>
+       function toosee(element) {
+    const text = element.querySelector('span');
+    text.style.display = text.style.display === 'none' ? 'block' : 'none';
+}
+    </script>
+
+
+    
+</body>
+</html>

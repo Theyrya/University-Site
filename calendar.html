@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calendar</title>
+    <link rel="stylesheet" href="style/calendar.css">
+
+</head>
+<body>
+    <div>
+    <section class="header">
+        <nav>
+            <a href="index.html"><img src="img/logo.png" alt="logo"></a>
+            <div class="nav-links" id="navLinks">
+                <i class="fa fa-times" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="about.html">ABOUT</a></li>
+                    <li><a href="course.html">COURSE</a></li>
+                    <li><a href="contact.html">CONTACT</a></li>
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+        </nav>
+        <div class="text-box">
+            <h1>Lets make a list of things you want to achieve this Semester</h1>
+            <p>We will notify you once the time is ending.</p>
+            
+        </div>
+    </div>
+        <div class="todo-grid">
+            
+        <p>Goals for this Semester:</p>
+    
+    <div class="todo-input-grid">
+    <input type="text" placeholder="Learn javascript" class="js-name-input">
+    <input type="date" placeholder="Until when"
+    class="js-due-date-input">
+    <button onclick="
+    addTodo();
+    " class="add-todo-button">Add</button>
+    </div>
+</div>
+
+    <div class="js-todolist todo-grid">
+        
+    </div>
+
+    </section>
+    
+
+    <script src="scripts/todo.js">
+        
+    </script>
+</body>
+</html>

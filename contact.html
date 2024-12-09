@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style/contact.css">
+  <title>Contact Us</title>
+  
+</head>
+<body>
+    <section class="header">
+        <nav>
+            <a href="index.html"><img src="img/logo.png" alt="logo"></a>
+            <div class="nav-links" id="navLinks">
+                <i class="fa fa-times" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="about.html">ABOUT</a></li>
+                    <li><a href="course.html">COURSE</a></li>
+                    <li><a href="todo.html">CALENDAR</a></li>
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+        </nav>
+        <div class="form-container">
+            <h2 style="padding-bottom: 5px;">Please Fill Up The Form</h2>
+            <h3 style="padding-bottom: 5px;">Our Team Will Contact You As Soon As Possible</h3>
+            <form id="contactForm" onsubmit="Formoutput(); return false;">
+              <div class="form-field">
+                <span>First Name:</span>
+                <input type="text" id="firstName" required placeholder="First name">
+              </div>
+              <div class="form-field">
+                <span>Last Name:</span>
+                <input type="text" id="lastName" required placeholder="Last name">
+              </div>
+              <div class="form-field">
+                <span>Email:</span>
+                <input type="email" id="email" required placeholder="Email">
+              </div>
+              <div class="form-field">
+                <span style="color: white;">Topic of Discusion:</span>
+                <textarea id="feedback" rows="3x" required placeholder="What you want to talk about?"></textarea>
+              </div>
+              <div class="form-field">
+                <span style="color: white;">Phone Numbers:</span>
+                <input type="text" id="phoneNumbers" placeholder="1234567890" required>
+              </div>
+              <button type="submit">Send</button>
+            </form>
+            <div id="output" class="output" style="display: none;">
+              <h3>We will contact to you soon:</h3>
+              <p>First Name: <span id="printFirstName"></span></p>
+              <p>Last Name: <span id="printLastName"></span></p>
+              <p>Email: <span id="printEmail"></span></p>
+              <p>Topic of Discusion: <span id="printFeedback"></span></p>
+              <p>Phone Number: <span id="printPhoneNumbers"></span></p>
+            </div>
+          </div>
+
+    </section>
+  
+
+  <script src="scripts/contact.js">
+   
+  </script>
+</body>
+</html>
